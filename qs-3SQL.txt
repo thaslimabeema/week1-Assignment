@@ -1,0 +1,23 @@
+SQL> select * from emp where hiredate like '__-FEB-81' and comm>400;
+
+     EMPNO ENAME           JOB             HIREDATE         MGR        SAL       COMM     DEPTNO
+---------- --------------- --------------- --------- ---------- ---------- ---------- ----------
+      7521 ward            salesman        22-FEB-81       7698       1250        500         30
+
+SQL> select ename from emp where comm is null or comm=0;
+
+ENAME
+---------------
+smith
+jones
+blake
+clark
+scott
+king
+turner
+adams
+james
+ford
+miller
+
+11 rows selected.
